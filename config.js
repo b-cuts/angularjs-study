@@ -2,7 +2,8 @@ requirejs.config({
     baseUrl: 'bower_components',
     paths: {
         'jquery': 'jquery/dist/jquery.min',
-        'jquery.cookie': '../js/cometd/jquery.cookie'
+        'jquery.cookie': '../js/cometd/jquery.cookie',
+        'angular': 'angular/angular.min'
     },
     shim: {
         'jquery': {
@@ -12,6 +13,9 @@ requirejs.config({
             deps: [
                 'jquery'
             ]
+        },
+        angular: {
+            exports: 'angular'
         }
     }
 });
