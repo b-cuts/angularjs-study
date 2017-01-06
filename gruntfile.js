@@ -8,7 +8,7 @@ module.exports = function(grunt) {
           //hostname: '127.0.0.1',
           hostname: '*',
           port: 18307,
-          base: 'src',
+          base: './',
           livereload: true
         }
       }
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', []);
-  grunt.registerTask('dev', ['connect:server', 'watch']);
+  grunt.registerTask('default', ['connect:server', 'watch']);
 };
