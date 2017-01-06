@@ -1,18 +1,6 @@
-requirejs.config({
-    baseUrl: 'bower_components',
-    paths: {
-        'jquery': 'jquery/dist/jquery.min',
-        'jquery.cookie': '../js/cometd/jquery.cookie'
-    },
-    shim: {
-        'jquery': {
-            exports: '$'
-        },
-        'jquery.cookie' : {
-            deps: [
-                'jquery'
-            ]
-        }
-    }
+define(['jquery'], function () {
+    $(function () {
+        "use strict";
+        console.log("Hello World!");
+    });
 });
-requirejs(["../js/main"]);
