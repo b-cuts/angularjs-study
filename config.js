@@ -15,4 +15,4 @@ requirejs.config({
         }
     }
 });
-requirejs(["../src/main"]);
+requirejs(["../src/app"]);
